@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facts</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="header">
+        <div class="buttons">
+            <button id="b" onclick="home()">All</button>
+            <button id="b" onclick="Science()">Science</button>
+            <button id="b" onclick="Hist()">History</button>
+            <button id="b" onclick="add()">Add</button> 
+    </div>
+    
+    <div class="middle1">
+        <h1>Add a new post</h1>
+        <h2>Topic</h2>
+
+        <form action="https://formsubmit.co/adambashaahmednaji@gmail.com" method="POST" >
+            <select>
+                <option value="Science" name="science">Science</option>
+                <option value="History" name="history">History</option>
+            </select>
+            <h2>Tittle</h2>
+            <input type="text" name="title" id="" required>
+            <h2 name="text">Text</h2>
+            <textarea name="text" id="" cols="30" rows="10" required></textarea>
+            <h2>Photo</h2>
+            <input type="file" name="img" id="">
+            <h2>Email</h2>
+            <input type="email" name="email" id="">
+            
+            <input type="hidden" name="_next" value="index.html"><br>
+
+            <input type="submit" value="submit" onclick="sum()" id="sum">
+        </form>
+
+
+
+    </div>
+    
+    
+</body>
+</html>
